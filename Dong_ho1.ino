@@ -26,7 +26,7 @@ void setup() {
  	Serial.println(c);
  	Serial.println();
 
-    String n = c.substring(1,2);
+  String n = c.substring(0,2);
     if (n == '\n') {
        h =  Serial.println(inString.toInt());   
     }
@@ -36,5 +36,5 @@ void setup() {
     else {
     digitalWrite(led, LOW);
     }   
- 	delay(1000);
- }
+   delay(1000);
+}
